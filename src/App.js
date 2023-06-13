@@ -8,9 +8,9 @@ import { useState } from 'react';
 function App() {
   const[usersList,setUsersList]=useState([])
 
-  const addUsersHnadler=(uName,uAge)=>{
+  const addUsersHnadler=(uName,uAge,uCollege)=>{
     setUsersList((prevUsersList)=>{
-      return [...prevUsersList,{name:uName,age:uAge, id:Math.random().toString()}];
+      return [...prevUsersList,{name:uName,age:uAge,college:uCollege, id:Math.random().toString()}];
     })
 
   }
